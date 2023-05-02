@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 10px;
+  border: 7px dashed black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h2{
+  font-family: 'Lilita One', cursive;
+  font-size: 36px;
+  line-height: 36px;
+  color: #7c3697;
+}
+
+.advice_container{
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+}
+.advice{
+  font-size: 60px;
+  transform: rotate(-10deg);
+  text-decoration:underline rgb(168, 44, 44) 3px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.btw{
+  
+margin-left: 80px; 
+font-size: 18px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
+body {
+  background-image: url(back.png);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+button{
+     
+    position: absolute;
+    align-self: center;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+    font-family: 'Lilita One', cursive;
+  }
+  button:hover {
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5%;
+  }
+  button:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+
+
+  @media all and(max-width: 500px){
+    .App{
+  width: 400px;
+  height: 300px;
+    }
+h2{
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.advice{
+  font-size: 20px;
+}
+
+  }
+  
+
+
